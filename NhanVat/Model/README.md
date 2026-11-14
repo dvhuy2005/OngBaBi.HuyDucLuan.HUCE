@@ -28,3 +28,11 @@ Mỗi file `.glb` đã gói sẵn texture, chỉ cần kéo vào scene hoặc in
 
 ## Mặt
 Mặt các nhân vật được tạo bằng AI (người không có thật).
+
+## Nháy mắt
+Mọi nhân vật (trừ Ông Ba Bị) có mí mắt riêng: mesh `MiMat` với blend shape `Blink`
+(0 = mở, 1 = nhắm).
+- **Tự nháy:** thêm một `Node` làm con của model, gắn `nhay_mat.gd`. Chỉnh được khoảng nghỉ,
+  tốc độ, tỉ lệ nháy đôi trong Inspector.
+- **Gọi từ code:** `$NhayMat.blink()` để nháy ngay, `$NhayMat.set_closed(true)` để nhắm hẳn (ngủ, ngất).
+- **Tự làm tay:** `mi.set_blend_shape_value(mi.find_blend_shape_by_name("Blink"), 1.0)`.
