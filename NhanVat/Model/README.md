@@ -8,10 +8,12 @@ Mỗi file `.glb` đã gói sẵn texture, chỉ cần kéo vào scene hoặc in
 | `Duc.glb` | Đức (nhân vật chính) | chưa có |
 | `BaSan.glb` | bà San | chưa có |
 | `Hung.glb`, `Ty.glb`, `Huong.glb`, `Be.glb` | lũ trẻ trong xóm | chưa có |
+| `ChuKem.glb` | chú Kem (đổi kem đồng nát), áo sơ mi xanh lính | chưa có |
+| `ChuKemAoMua.glb` | chú Kem mặc áo mưa trùm mũ (cảnh đêm, hồi V) | chưa có |
 | `OngBaBi.glb` | Ông Ba Bị | `idle-loop`, `walk-loop`, `run-loop`, `look-loop`, `grab` |
 
 ## Kích thước, hướng
-- Model cao khoảng 1,8 m (cỡ người lớn). Trẻ con thì scale khoảng 0,65 đến 0,7; bà San khoảng 0,82; Ông Ba Bị khoảng 1,2.
+- Model cao khoảng 1,8 m (cỡ người lớn). Trẻ con thì scale khoảng 0,65 đến 0,7; bà San khoảng 0,82; chú Kem để 1,0; Ông Ba Bị khoảng 1,2.
 - Gốc toạ độ nằm dưới chân, mặt quay về +Z.
 
 ## Khung xương
