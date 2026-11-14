@@ -1,6 +1,7 @@
 # Model nhân vật (Luân)
 
-Kiểu low-poly: ảnh mặt bọc quanh đầu low-poly, thân mượt, quần áo dùng texture vải thật.
+Kiểu low-poly giống kênh Low Poly Shorts: ảnh mặt bọc quanh đầu, tóc là khối riêng, quần áo là
+"ảnh" quần áo thật (cổ áo, nút, túi, đường may, nếp nhăn), dép có quai.
 Mỗi file `.glb` đã gói sẵn texture, chỉ cần kéo vào scene hoặc instance trong Godot.
 
 | File | Nhân vật | Animation |
@@ -13,7 +14,9 @@ Mỗi file `.glb` đã gói sẵn texture, chỉ cần kéo vào scene hoặc in
 | `OngBaBi.glb` | Ông Ba Bị | `idle-loop`, `walk-loop`, `run-loop`, `look-loop`, `grab` |
 
 ## Kích thước, hướng
-- Model cao khoảng 1,8 m (cỡ người lớn). Trẻ con thì scale khoảng 0,65 đến 0,7; bà San khoảng 0,82; chú Kem để 1,0; Ông Ba Bị khoảng 1,2.
+- Mỗi model đã đúng chiều cao thật, để scale = 1: Tý 1,20 m · Hưng 1,25 m · Đức, Hường 1,38 m ·
+  bà San 1,48 m · chú Kem 1,65 m. Bé (bản cũ) 1,15 m. Ông Ba Bị dựng cỡ 1,8 m, nên để scale khoảng 1,2.
+- Trẻ con có chân ngắn, đầu to hơn người lớn (đúng dáng trẻ con).
 - Gốc toạ độ nằm dưới chân, mặt quay về +Z.
 
 ## Khung xương
