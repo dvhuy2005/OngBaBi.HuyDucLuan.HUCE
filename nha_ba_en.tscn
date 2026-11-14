@@ -1,0 +1,565 @@
+[gd_scene format=3 uid="uid://cximbdb3d2h8g"]
+
+[ext_resource type="Texture2D" uid="uid://bsuputnelfckm" path="res://Picture/concrete_floor_worn_001_diff_2k.jpg" id="1_fxqn2"]
+[ext_resource type="PackedScene" uid="uid://cj82x6fc1cfln" path="res://NhanVat/player.tscn" id="1_jibf1"]
+[ext_resource type="PackedScene" path="res://DuongLuon.tscn" id="2_duongluon"]
+[ext_resource type="Texture2D" uid="uid://d27sul5dgwl6" path="res://Picture/GachHoa.jpg" id="2_r7fjn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r7fjn"]
+albedo_texture = ExtResource("1_fxqn2")
+uv1_scale = Vector3(16, 16, 16)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ij8kh"]
+albedo_texture = ExtResource("2_r7fjn")
+uv1_scale = Vector3(3, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cw33n"]
+albedo_color = Color(0.4392157, 0.3529412, 0.22745098, 1)
+
+[node name="NhaBaEn" type="Node3D" unique_id=380878894]
+
+[node name="SanSau" type="CSGBox3D" parent="." unique_id=964742467]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9352522, -0.10373197, -1.2375677)
+use_collision = true
+size = Vector3(32.516426, 0.2, 49.686157)
+material = SubResource("StandardMaterial3D_r7fjn")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="SanSau" unique_id=1535220292]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.984727, 0.033593036, -17.150734)
+operation = 2
+use_collision = true
+size = Vector3(4.824631, 0.37912846, 15.705147)
+
+[node name="Vuon2" type="CSGBox3D" parent="SanSau" unique_id=1531135951]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0758653, 0.12576708, -23.53841)
+use_collision = true
+size = Vector3(13.126551, 0.19478035, 2.1512127)
+
+[node name="Vuon3" type="CSGBox3D" parent="SanSau" unique_id=1463927211]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6525455, 0.12576708, -17.65644)
+use_collision = true
+size = Vector3(1.3597538, 0.19478035, 5.6016455)
+
+[node name="Vuon4" type="CSGBox3D" parent="SanSau" unique_id=1389101161]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2464933, 0.019359082, -17.641884)
+use_collision = true
+size = Vector3(1.8112246, 0.19478035, 5.5725307)
+material = SubResource("StandardMaterial3D_ij8kh")
+
+[node name="Tuong" type="CSGBox3D" parent="SanSau" unique_id=591526632]
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 11.533421, 1.4165119, -22.589214)
+use_collision = true
+size = Vector3(4.4841795, 0.19478035, 2.830412)
+
+[node name="HangRao" type="CSGBox3D" parent="SanSau" unique_id=437818248]
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 11.533421, 0.9991921, -11.31291)
+use_collision = true
+size = Vector3(7.4739747, 0.19478035, 1.9957724)
+
+[node name="CuaRaVao" type="CSGBox3D" parent="SanSau/HangRao" unique_id=511079651]
+transform = Transform3D(-4.371139e-08, 0, -1, 1, -4.371139e-08, -4.371139e-08, -4.371139e-08, -1, 1.9106855e-15, -2.8097734, -0.010170937, -0.02926886)
+operation = 2
+size = Vector3(0.2769922, 2.0307524, 1.4905486)
+
+[node name="HangRao3" type="CSGBox3D" parent="SanSau" unique_id=1553890202]
+transform = Transform3D(1.0000001, 3.8014036e-13, -4.3711392e-08, -4.3711776e-08, 1.910663e-15, -1.0000002, -3.7658765e-13, 1.0000001, 2.2658135e-20, 1.4398828, 1.459043, -24.732697)
+use_collision = true
+size = Vector3(20.20055, 0.19478035, 2.7759511)
+
+[node name="DuongLuon" parent="SanSau" unique_id=1852414682 instance=ExtResource("2_duongluon")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02041006, 0, 1.2120934)
+
+[node name="DienTho" type="CSGBox3D" parent="SanSau" unique_id=1131683504]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.67437, 2.259926, -17.6679)
+use_collision = true
+size = Vector3(5.9553957, 4.4630985, 5.6315765)
+
+[node name="NhaChinh" type="Node3D" parent="." unique_id=579269057]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
+
+[node name="Tuong1" type="CSGBox3D" parent="NhaChinh" unique_id=1268594262]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4, 2.2, 10)
+use_collision = true
+size = Vector3(0.2, 3.2, 10)
+
+[node name="Tuong2" type="CSGBox3D" parent="NhaChinh" unique_id=1231173080]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4, 2.2, 10)
+use_collision = true
+size = Vector3(0.2, 3.2, 10)
+
+[node name="Tuong3" type="CSGBox3D" parent="NhaChinh" unique_id=1427008429]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.0484824, 1.9071262, 6.736411)
+use_collision = true
+size = Vector3(0.2, 3.8, 3.2)
+
+[node name="Tuong truoc" type="CSGBox3D" parent="NhaChinh" unique_id=1169658082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.2, 14.9)
+use_collision = true
+size = Vector3(15, 3.2, 0.2)
+
+[node name="CuaRaVao1" type="CSGBox3D" parent="NhaChinh/Tuong truoc" unique_id=476924107]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.45699906, 0)
+operation = 2
+size = Vector3(1.8, 2.2, 0.5)
+
+[node name="CuaSo1" type="CSGBox3D" parent="NhaChinh/Tuong truoc" unique_id=1129050006]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.188702, 0, 0)
+operation = 2
+size = Vector3(1.2, 1.5, 0.5)
+
+[node name="CuaSo2" type="CSGBox3D" parent="NhaChinh/Tuong truoc" unique_id=1958551971]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2774997, -0.04172373, 0)
+operation = 2
+size = Vector3(1.2, 1.5, 0.5)
+
+[node name="Tuong truoc2" type="CSGBox3D" parent="NhaChinh" unique_id=669017310]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.2, 8.311737)
+use_collision = true
+size = Vector3(15, 3.2, 0.2)
+
+[node name="CuaRaVao2" type="CSGBox3D" parent="NhaChinh/Tuong truoc2" unique_id=1363753653]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6175613, -0.610888, 0)
+operation = 2
+size = Vector3(1.3, 2, 0.5)
+
+[node name="CuaRaVao3" type="CSGBox3D" parent="NhaChinh/Tuong truoc2" unique_id=1978009246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7668858, -0.60217094, 0)
+operation = 2
+size = Vector3(1, 2, 0.5)
+
+[node name="Tuong truoc3" type="CSGBox3D" parent="NhaChinh" unique_id=869672092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.2, 5.0844755)
+use_collision = true
+size = Vector3(15, 3.2, 0.2)
+
+[node name="CuaRaVao3" type="CSGBox3D" parent="NhaChinh/Tuong truoc3" unique_id=1607548465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.971953, -1.0851917, 0)
+operation = 2
+size = Vector3(1.5, 2, 0.5)
+
+[node name="CuaSo3" type="CSGBox3D" parent="NhaChinh/Tuong truoc3" unique_id=2048289337]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.218936, 0.6661916, 0)
+operation = 2
+size = Vector3(0.6, 0.45869142, 0.5)
+
+[node name="NenNhaCSG" type="CSGBox3D" parent="NhaChinh" unique_id=400846116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 10)
+operation = 2
+use_collision = true
+size = Vector3(15, 1.2, 10)
+
+[node name="HaNenPhong" type="CSGBox3D" parent="NhaChinh/NenNhaCSG" unique_id=873484181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.182419, 0.32127625, -3.30062)
+operation = 2
+size = Vector3(10.226987, 0.6, 3.0451171)
+
+[node name="HaNenPhong2" type="CSGBox3D" parent="NhaChinh/NenNhaCSG" unique_id=1167581548]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9728289, 0.23588187, -4.785268)
+operation = 2
+size = Vector3(1.5082397, 0.9922363, 0.63212794)
+
+[node name="HaNenPhong3" type="CSGBox3D" parent="NhaChinh/NenNhaCSG" unique_id=1031348826]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7600694, 0.7146532, -1.7868061)
+operation = 2
+size = Vector3(1.0033636, 0.82521975, 0.63212794)
+
+[node name="Tuong4" type="CSGBox3D" parent="NhaChinh" unique_id=1621388508]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1308386, 1.94, 6.67)
+use_collision = true
+size = Vector3(0.2, 3.8, 3.2)
+
+[node name="Tuong5" type="CSGBox3D" parent="NhaChinh/Tuong4" unique_id=1664977389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009303331, -0.89415, 1.0354166)
+operation = 2
+size = Vector3(0.22, 2, 1.0019531)
+
+[node name="HienVaBeNuoc" type="Node3D" parent="." unique_id=1993349993]
+
+[node name="NenNha2" type="CSGBox3D" parent="HienVaBeNuoc" unique_id=1588721518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0343337, 0.07500024, 2.9829743)
+use_collision = true
+size = Vector3(15, 0.15, 4)
+
+[node name="BeNuoc5" type="Node3D" parent="HienVaBeNuoc" unique_id=1990085151]
+
+[node name="BeNuoc1" type="CSGBox3D" parent="HienVaBeNuoc/BeNuoc5" unique_id=2094199474]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.632573, 0.49761963, 2.98269)
+use_collision = true
+size = Vector3(0.4411621, 1.9952393, 3.9890137)
+
+[node name="BeNuoc3" type="CSGBox3D" parent="HienVaBeNuoc/BeNuoc5" unique_id=178516754]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.335616, 0.9274597, 2.984094)
+use_collision = true
+size = Vector3(0.4411621, 2.8549194, 3.986206)
+
+[node name="BeNuoc2" type="CSGBox3D" parent="HienVaBeNuoc/BeNuoc5" unique_id=1969295824]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.96745, 0.9197693, 1.3166459)
+use_collision = true
+size = Vector3(7.1145935, 2.8395386, 0.66589355)
+
+[node name="BeNuoc5" type="CSGBox3D" parent="HienVaBeNuoc/BeNuoc5" unique_id=121808039]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.96745, 0.5119858, 1.8037095)
+use_collision = true
+size = Vector3(7.1145935, 2.0239716, 0.30801392)
+
+[node name="BeNuoc6" type="CSGBox3D" parent="HienVaBeNuoc/BeNuoc5" unique_id=1529244296]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.96745, 0.5119858, 4.896115)
+use_collision = true
+size = Vector3(7.1145935, 2.0239716, 0.30801392)
+
+[node name="BeNuoc4" type="CSGCylinder3D" parent="HienVaBeNuoc/BeNuoc5" unique_id=507626104]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -7.9821887, 1.4711447, 3.3336163)
+use_collision = true
+radius = 1.6806641
+height = 7.1359024
+sides = 16
+
+[node name="BeNuoc4_1" type="CSGCylinder3D" parent="HienVaBeNuoc/BeNuoc5/BeNuoc4" unique_id=1048434131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0058193207, 0.00496459)
+operation = 2
+radius = 1.418457
+height = 7.147541
+sides = 16
+
+[node name="BeNuoc4_2" type="CSGBox3D" parent="HienVaBeNuoc/BeNuoc5/BeNuoc4" unique_id=2081035754]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8784237, 0, 0)
+operation = 2
+size = Vector3(1.758496, 7.3, 3.6)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="HienVaBeNuoc" unique_id=404422572]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5225081, 1.6564636, 4.530307)
+use_collision = true
+size = Vector3(2.7663574, 3.0684814, 1.0009766)
+
+[node name="SanTruoc" type="Node3D" parent="." unique_id=940828436]
+
+[node name="MatSan" type="CSGBox3D" parent="SanTruoc" unique_id=1323413240]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9533787, 0.3996048, 17.907864)
+use_collision = true
+size = Vector3(24.850605, 1.7992096, 5.9514084)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="SanTruoc/MatSan" unique_id=571188074]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0998287, 0.84092927, -2.381606)
+operation = 2
+size = Vector3(1.1330185, 0.7371216, 1.6932373)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="SanTruoc/MatSan" unique_id=475747921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1034718, 0.6114905, -2.800521)
+operation = 2
+size = Vector3(1.1403046, 1.1959991, 0.8554077)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="SanTruoc/MatSan" unique_id=1842391762]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.958878, 0.8399838, -1.4140911)
+use_collision = true
+size = Vector3(14.98403, 0.19658327, 3.2181969)
+
+[node name="Tuong5" type="CSGBox3D" parent="SanTruoc/MatSan" unique_id=616006742]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.224468, 1.9395092, 0.20559692)
+use_collision = true
+size = Vector3(0.1, 1.2, 6.6359954)
+
+[node name="Doc" type="CSGBox3D" parent="SanTruoc" unique_id=361147147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.026055, 1.0286574, 19.473011)
+use_collision = true
+size = Vector3(4.6245728, 2.8109283, 2.8085785)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="SanTruoc/Doc" unique_id=967902413]
+transform = Transform3D(1, 0, 0, 0, 0.49999994, -0.8660254, 0, 0.8660254, 0.49999994, -0.018469334, 1.2892559, -0.68042755)
+operation = 2
+size = Vector3(4.666626, 2.2538528, 0.97265625)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="SanTruoc/Doc" unique_id=1015760517]
+transform = Transform3D(1, 0, 0, 0, 0.25881904, -0.9659257, 0, 0.9659257, 0.25881904, -0.018469334, 1.314194, 0.4449482)
+operation = 2
+size = Vector3(4.666626, 1.7434769, 0.24328613)
+
+[node name="CauThang1" type="CSGBox3D" parent="SanTruoc/Doc" unique_id=112592524]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4450524, 0.81367207, 0.7101364)
+size = Vector3(2.3101807, 1.1645813, 1.3836594)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="SanTruoc/Doc/CauThang1" unique_id=1317658520]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22272062, -0.47915077)
+operation = 2
+size = Vector3(2.3101807, 0.7289543, 0.4677477)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="SanTruoc/Doc/CauThang1" unique_id=1381144498]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3972211, -0.042913437)
+operation = 2
+size = Vector3(2.3101807, 0.38485718, 0.49017334)
+
+[node name="CauThang2" type="CSGBox3D" parent="SanTruoc/Doc" unique_id=496692095]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.457993, 0.820508, 0.7196541)
+size = Vector3(2.3101807, 1.1782532, 1.3836594)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="SanTruoc/Doc/CauThang2" unique_id=1058249730]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2378087, -0.47915077)
+operation = 2
+size = Vector3(2.3101807, 0.7591305, 0.4677477)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="SanTruoc/Doc/CauThang2" unique_id=96922378]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3972211, -0.042913437)
+operation = 2
+size = Vector3(2.3101807, 0.38485718, 0.49017334)
+
+[node name="Vuon1" type="CSGBox3D" parent="SanTruoc" unique_id=767305959]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.457322, 0.37724233, 17.883698)
+use_collision = true
+size = Vector3(9.856018, 2.8015823, 5.9447937)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="SanTruoc/Vuon1" unique_id=871994917]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.12545, -0.085166335, -1.9690113)
+operation = 2
+use_collision = true
+size = Vector3(1.6051178, 3.136309, 2.006771)
+
+[node name="DayTro" type="Node3D" parent="." unique_id=1651130613]
+
+[node name="NhaTro" type="CSGBox3D" parent="DayTro" unique_id=519136322]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.464799, 1.3295183, 6.7001143)
+use_collision = true
+size = Vector3(7.7961426, 3.2810364, 6.171356)
+
+[node name="Bep1" type="Node3D" parent="DayTro" unique_id=1770557505]
+
+[node name="MatSan" type="CSGBox3D" parent="DayTro/Bep1" unique_id=566015552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.49785, -0.13365841, 1.6908202)
+use_collision = true
+size = Vector3(7.6624146, 0.35468292, 5.8639984)
+
+[node name="Tuong1" type="CSGBox3D" parent="DayTro/Bep1" unique_id=2100179886]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.689154, 1.4735329, 1.1705723)
+use_collision = true
+size = Vector3(0.2, 2.9514709, 4.94884)
+
+[node name="CuaRaVao" type="CSGBox3D" parent="DayTro/Bep1/Tuong1" unique_id=614684647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009, -0.423, 1.763)
+operation = 2
+size = Vector3(0.22, 2, 1)
+
+[node name="Tuong2" type="CSGBox3D" parent="DayTro/Bep1" unique_id=1468893025]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.274957, 1.5341882, 1.1305332)
+use_collision = true
+size = Vector3(0.2, 2.8974488, 5.0289183)
+
+[node name="CuaSo2" type="CSGBox3D" parent="DayTro/Bep1/Tuong2" unique_id=716840588]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.003, 0.8, -1.701)
+operation = 2
+size = Vector3(0.2769922, 0.45748436, 0.7683828)
+
+[node name="Tuong4" type="CSGBox3D" parent="DayTro/Bep1" unique_id=1681514127]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.50615, 1.5079527, 3.622976)
+use_collision = true
+size = Vector3(0.2, 2.9321227, 7.4783263)
+
+[node name="Bep2" type="Node3D" parent="DayTro" unique_id=1209664311]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.893896)
+
+[node name="MatSan" type="CSGBox3D" parent="DayTro/Bep2" unique_id=174966179]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.522447, -0.14528179, 0.8310046)
+use_collision = true
+size = Vector3(7.670349, 0.33143616, 7.5836296)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="DayTro/Bep2/MatSan" unique_id=681065032]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.797943, 0.17672288, -2.2677412)
+operation = 2
+size = Vector3(3.7669983, 1, 4.180031)
+
+[node name="Tuong1" type="CSGBox3D" parent="DayTro/Bep2" unique_id=155611196]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.689154, 1.4517909, 2.620193)
+use_collision = true
+size = Vector3(0.2, 2.9860833, 3.9575593)
+
+[node name="CuaRaVao" type="CSGBox3D" parent="DayTro/Bep2/Tuong1" unique_id=440813113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00930357, -0.42343032, 1.4432371)
+operation = 2
+size = Vector3(0.22, 2, 1)
+
+[node name="Tuong2" type="CSGBox3D" parent="DayTro/Bep2" unique_id=1880324662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.397946, 1.4856749, 2.700605)
+use_collision = true
+size = Vector3(0.2, 2.887567, 3.7921891)
+
+[node name="CuaRaVao" type="CSGBox3D" parent="DayTro/Bep2/Tuong2" unique_id=665257595]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0024499893, -0.34202313, 1.3613662)
+operation = 2
+size = Vector3(0.277, 2, 1)
+
+[node name="Tuong3" type="CSGBox3D" parent="DayTro/Bep2" unique_id=1014351771]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.579386, 1.4241194, 0.75139)
+use_collision = true
+size = Vector3(0.2, 3.0204437, 7.599143)
+
+[node name="Tuong4" type="CSGBox3D" parent="DayTro/Bep2" unique_id=1435192966]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.478074, 1.49532, 4.6845512)
+use_collision = true
+size = Vector3(0.2, 2.9068573, 7.422174)
+
+[node name="Tuong5" type="CSGBox3D" parent="DayTro/Bep2" unique_id=930289506]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.274957, 1.5326623, 2.6224985)
+use_collision = true
+size = Vector3(0.2, 2.894397, 3.8843963)
+
+[node name="CuaSo" type="CSGBox3D" parent="DayTro/Bep2/Tuong5" unique_id=1582360270]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.003, 0.8, 1.241806)
+operation = 2
+size = Vector3(0.2769922, 0.45748436, 0.7683828)
+
+[node name="NhaTam" type="Node3D" parent="DayTro" unique_id=695121695]
+
+[node name="Tuong1" type="CSGBox3D" parent="DayTro/NhaTam" unique_id=1519364003]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.687468, 1.5088023, -7.0234833)
+use_collision = true
+size = Vector3(0.2, 2.933822, 3.6391847)
+
+[node name="CuaRaVao" type="CSGBox3D" parent="DayTro/NhaTam/Tuong1" unique_id=1882317912]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0024499893, -0.46865344, -0.74690866)
+operation = 2
+size = Vector3(0.277, 2, 1)
+
+[node name="Tuong2" type="CSGBox3D" parent="DayTro/NhaTam" unique_id=587097453]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.281182, 1.5114027, -7.0326447)
+use_collision = true
+size = Vector3(0.2, 2.9390228, 3.6548586)
+
+[node name="CuaSo" type="CSGBox3D" parent="DayTro/NhaTam/Tuong2" unique_id=672780858]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.002, 0.8, 0.915)
+operation = 2
+size = Vector3(0.277, 0.457, 0.768)
+
+[node name="Tuong3" type="CSGBox3D" parent="DayTro/NhaTam" unique_id=1977831666]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 11.02548, 1.510557, -8.745747)
+use_collision = true
+size = Vector3(0.2, 2.9373314, 4.549695)
+
+[node name="NhaTro3" type="CSGBox3D" parent="." unique_id=1397179799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.476029, 1.4706924, 12.341863)
+use_collision = true
+size = Vector3(7.819, 3, 5.192)
+
+[node name="Player" parent="." unique_id=1245986243 instance=ExtResource("1_jibf1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1.994)
+
+[node name="NhaHangXom" type="CSGBox3D" parent="." unique_id=1998747623]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.662209, 6.64977, -2.5485334)
+use_collision = true
+size = Vector3(6.3931885, 13.921539, 46.75862)
+
+[node name="NhaHangXom2" type="CSGBox3D" parent="." unique_id=1118561204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.129929, 3.324151, 15.201555)
+use_collision = true
+size = Vector3(6.3931885, 7.270302, 11.258442)
+
+[node name="NhaVeSinh" type="Node3D" parent="." unique_id=1009624245]
+
+[node name="DuongDi" type="Node3D" parent="NhaVeSinh" unique_id=2057448331]
+
+[node name="MatDat2" type="CSGBox3D" parent="NhaVeSinh/DuongDi" unique_id=744726170]
+transform = Transform3D(0.9961947, 0.022557562, -0.084185965, 0, 0.96592575, 0.258819, 0.08715574, -0.25783414, 0.9622501, 12.623038, -1.9158163, -19.350433)
+use_collision = true
+size = Vector3(3.1207142, 0.2, 13.975739)
+material = SubResource("StandardMaterial3D_cw33n")
+
+[node name="MatDat3" type="CSGBox3D" parent="NhaVeSinh/DuongDi" unique_id=416224456]
+transform = Transform3D(0.9848077, 0.17364816, 0, -0.17364818, 0.98480767, 0, 0, 0, 0.99999994, 9.886386, -0.16358542, -19.255018)
+use_collision = true
+size = Vector3(0.70819855, 0.2, 13.70343)
+material = SubResource("StandardMaterial3D_cw33n")
+
+[node name="MatDat10" type="CSGBox3D" parent="NhaVeSinh/DuongDi" unique_id=257480934]
+transform = Transform3D(0.99383, 0.11091387, 0, -0.11091389, 0.99382997, 0, 0, 0, 0.99999994, 9.131738, -0.044200636, -19.255018)
+use_collision = true
+size = Vector3(1.0434809, 0.2, 13.70343)
+material = SubResource("StandardMaterial3D_cw33n")
+
+[node name="MatDat11" type="CSGBox3D" parent="NhaVeSinh/DuongDi" unique_id=742440376]
+transform = Transform3D(0.9973666, 0, -0.07252451, 0, 0.99999994, 0, 0.07252452, 0, 0.99736655, 10.924302, -0.09196028, -11.562407)
+use_collision = true
+size = Vector3(4.8955717, 0.2, 2.4221573)
+material = SubResource("StandardMaterial3D_cw33n")
+
+[node name="MatDat9" type="CSGBox3D" parent="NhaVeSinh/DuongDi" unique_id=815712649]
+transform = Transform3D(0.9781474, 0.20791164, 0, -0.20082723, 0.9448177, 0.25881898, 0.053811498, -0.25316313, 0.9659256, 11.180316, -1.5988017, -18.202257)
+use_collision = true
+size = Vector3(0.70819855, 0.2, 9.824989)
+material = SubResource("StandardMaterial3D_cw33n")
+
+[node name="MatDat7" type="CSGBox3D" parent="NhaVeSinh/DuongDi" unique_id=584486207]
+transform = Transform3D(0.7071067, 0.70710665, 0, -0.7071067, 0.70710665, 0, 0, 0, 0.99999994, 10.429844, -0.4402712, -19.255018)
+use_collision = true
+size = Vector3(0.70819855, 0.2, 13.70343)
+material = SubResource("StandardMaterial3D_cw33n")
+
+[node name="MatDat6" type="CSGBox3D" parent="NhaVeSinh/DuongDi" unique_id=588319345]
+transform = Transform3D(0.34202012, 0.93969244, 0, -0.9396925, 0.3420201, 0, 0, 0, 0.99999994, 11.204003, -2.1842108, -19.255018)
+use_collision = true
+size = Vector3(3.2709284, 0.2, 13.70343)
+material = SubResource("StandardMaterial3D_cw33n")
+
+[node name="MatDat4" type="CSGBox3D" parent="NhaVeSinh/DuongDi" unique_id=1615761154]
+transform = Transform3D(0.9779133, 0.19083275, -0.08525116, -0.16985351, 0.96328706, 0.20791167, 0.12179771, -0.1888394, 0.9744253, 10.0000305, -0.13230467, -13.212129)
+use_collision = true
+size = Vector3(1.0774164, 0.2, 1.2968521)
+material = SubResource("StandardMaterial3D_cw33n")
+
+[node name="MatDat5" type="CSGBox3D" parent="NhaVeSinh/DuongDi" unique_id=1077474587]
+transform = Transform3D(0.9961944, 0.087155715, 0, -0.08418595, 0.9622499, 0.25881898, 0.022557557, -0.25783408, 0.9659256, 10.907911, -0.5976382, -14.584398)
+use_collision = true
+size = Vector3(1.2344902, 0.2, 4.1876163)
+material = SubResource("StandardMaterial3D_cw33n")
+
+[node name="MatDat8" type="CSGBox3D" parent="NhaVeSinh/DuongDi" unique_id=1783910645]
+transform = Transform3D(0.9961944, 0.087155715, 0, -0.08418595, 0.9622499, 0.25881898, 0.022557557, -0.25783408, 0.9659256, 10.898141, -0.7795944, -13.55544)
+use_collision = true
+size = Vector3(1.0780699, 0.2, 1.1317902)
+material = SubResource("StandardMaterial3D_cw33n")
+
+[node name="HangRao2" type="CSGBox3D" parent="NhaVeSinh" unique_id=1890390613]
+transform = Transform3D(0.087155685, 0.99619466, -4.3545057e-08, 0, -4.3711385e-08, -1.0000001, -0.9961947, 0.08715568, -3.8096966e-09, 13.962988, -0.51794034, -17.380375)
+use_collision = true
+size = Vector3(17.281597, 0.19478035, 6.4993124)
+
+[node name="NhaVeSinh2" type="Node3D" parent="NhaVeSinh" unique_id=1569238048]
+
+[node name="Tuong2" type="CSGBox3D" parent="NhaVeSinh/NhaVeSinh2" unique_id=231124613]
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 11.539915, -1.0574949, -24.986204)
+use_collision = true
+size = Vector3(3.2660155, 0.19478035, 3.8624716)
+
+[node name="Tuong3" type="CSGBox3D" parent="NhaVeSinh/NhaVeSinh2" unique_id=81335312]
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 14.182203, -1.057495, -24.986204)
+use_collision = true
+size = Vector3(3.2660155, 0.19478035, 3.8624716)
+
+[node name="Tran" type="CSGBox3D" parent="NhaVeSinh/NhaVeSinh2" unique_id=1690370980]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.821296, 0.7825501, -25.034744)
+use_collision = true
+size = Vector3(3.2206528, 0.19478035, 3.4040508)
+
+[node name="Tuong1" type="CSGBox3D" parent="NhaVeSinh/NhaVeSinh2" unique_id=1380087234]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12.848181, -1.0261508, -26.318739)
+use_collision = true
+size = Vector3(0.2, 2.753537, 2.7863894)
+
+[node name="Tuong4" type="CSGBox3D" parent="NhaVeSinh/NhaVeSinh2" unique_id=930526890]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12.136203, -1.0654509, -23.644552)
+use_collision = true
+size = Vector3(0.2, 3.562698, 1.362433)
+
+[node name="San" type="CSGBox3D" parent="NhaVeSinh/NhaVeSinh2" unique_id=672471285]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.827753, -2.7842708, -25.034744)
+use_collision = true
+size = Vector3(2.9147696, 0.19478035, 3.4040508)
+
+[node name="Tuong5" type="CSGBox3D" parent="NhaVeSinh" unique_id=295214043]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.0090065, 0.55591464, -26.08315)
+use_collision = true
+size = Vector3(0.2, 1.4313459, 2.7863894)
+
+[node name="Tuong6" type="CSGBox3D" parent="NhaVeSinh" unique_id=590863012]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.894141, -1.3465832, -26.08315)
+use_collision = true
+size = Vector3(0.2, 2.8920467, 1.0161195)
+
+[node name="TestMatTroi" type="DirectionalLight3D" parent="." unique_id=1103670835]
+transform = Transform3D(0.8660254, -0.35355338, 0.35355338, 0, 0.70710677, 0.70710677, -0.5, -0.6123724, 0.6123724, 0.007659793, 26.390835, -8.213064)
+shadow_enabled = true

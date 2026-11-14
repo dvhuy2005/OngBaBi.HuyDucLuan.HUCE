@@ -1,0 +1,39 @@
+[gd_scene format=3]
+
+[node name="DuongLuon" type="Node3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=1295147571]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -7.6349874, 0.06957538, -19.154987)
+use_collision = true
+radius = 0.61
+height = 2.086914
+sides = 10
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="." unique_id=531318259]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -7.655007, 0.06957538, -17.139496)
+use_collision = true
+radius = 0.61
+height = 2.1269531
+sides = 10
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=998417181]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -7.67145, -0.1076751, -18.140965)
+use_collision = true
+size = Vector3(2.164795, 1.1230469, 1.1203613)
+
+[node name="123" type="CSGCylinder3D" parent="CSGBox3D" unique_id=358167497]
+transform = Transform3D(-4.371139e-08, -1, 0, 0.99999875, -4.3711314e-08, 0, 0, 0, 0.99999875, 0.07062149, 0.94511724, -0.008323669)
+operation = 2
+radius = 0.7
+height = 2.1606445
+sides = 12
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=240581147]
+transform = Transform3D(1, 0, 0, 0, 0.4999999, 0.8660253, 0, -0.8660253, 0.4999999, -7.6149316, -0.15890989, -16.538004)
+use_collision = true
+size = Vector3(2.0473633, 1.1230469, 1)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=1400162683]
+transform = Transform3D(1, 0, 0, 0, 0.4999999, -0.8660253, 0, 0.8660253, 0.4999999, -7.6149316, -0.15621254, -19.751053)
+use_collision = true
+size = Vector3(2.0473633, 1.1230469, 1)
