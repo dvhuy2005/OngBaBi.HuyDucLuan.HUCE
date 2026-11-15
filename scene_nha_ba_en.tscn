@@ -2,8 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://cximbdb3d2h8g" path="res://nha_ba_en.tscn" id="1_1i5jk"]
 [ext_resource type="PackedScene" uid="uid://dv4dlkxckism3" path="res://Suoi.tscn" id="2_wnfts"]
-[ext_resource type="Texture2D" uid="uid://cfm4r3hor6js3" path="res://Picture/hilly_terrain_01_puresky_2k.hdr" id="3_xcao0"]
+[ext_resource type="Texture2D" uid="uid://cfm4r3hor6js3" path="res://Picture/AnhNen/hilly_terrain_01_puresky_2k.hdr" id="3_xcao0"]
 [ext_resource type="PackedScene" uid="uid://cu0tysvus2yk3" path="res://TiemCoHan.tscn" id="4_bnv53"]
+[ext_resource type="Texture2D" uid="uid://cpdkl78fhlv27" path="res://Picture/AnhNen/nui_rung_xa_tach_nen.png" id="5_h0g2v"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m3hby"]
 albedo_color = Color(0.4392157, 0.3529412, 0.22745098, 1)
@@ -22,39 +23,95 @@ ambient_light_color = Color(0.78431374, 0.827451, 0.8784314, 1)
 ambient_light_energy = 0.6
 ssr_enabled = true
 
+[sub_resource type="QuadMesh" id="QuadMesh_bnv53"]
+size = Vector2(1, 1.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h0g2v"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_color = Color(0.6, 0.6, 0.6, 1)
+albedo_texture = ExtResource("5_h0g2v")
+
+[sub_resource type="QuadMesh" id="QuadMesh_bdtm4"]
+size = Vector2(2, 1.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ii16j"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_color = Color(0.6, 0.6, 0.6, 1)
+albedo_texture = ExtResource("5_h0g2v")
+
 [node name="SceneNhaBaEn" type="Node3D" unique_id=1764751976]
 
 [node name="NhaBaEn" parent="." unique_id=380878894 instance=ExtResource("1_1i5jk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.327053, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05834961, 14.327051, -0.0022277832)
 
 [node name="MatDat2" type="CSGBox3D" parent="NhaBaEn" unique_id=681421161]
-transform = Transform3D(0.42261818, 0.9063077, 0, -0.9063077, 0.42261818, 0, 0, 0, 1, 14.356843, -2.0383015, 5.0230885)
+transform = Transform3D(0.4218588, 0.90666145, 0, -0.90666145, 0.4218588, 0, 0, 0, 1, 14.160811, -2.084711, 5.0230885)
 use_collision = true
-size = Vector3(4.569619, 0.2, 32.231575)
+size = Vector3(4.637837, 0.2, 32.231575)
 material = SubResource("StandardMaterial3D_m3hby")
 
 [node name="MatDat5" type="CSGBox3D" parent="NhaBaEn" unique_id=1090744999]
-transform = Transform3D(0.40770236, 0.9080971, -0.09559295, -0.8865895, 0.41873348, 0.19652271, 0.21848974, 0.004628933, 0.9758283, 14.366212, -2.006796, -18.242474)
+transform = Transform3D(0.63564646, 0.7660387, -0.095592946, -0.7423647, 0.64052576, 0.19652271, 0.2117738, -0.053954117, 0.9758283, 14.241483, -2.2961597, -18.196417)
 use_collision = true
-size = Vector3(1.342417, 0.2, 16.353409)
+size = Vector3(0.7395679, 0.2, 16.353409)
 material = SubResource("StandardMaterial3D_m3hby")
 
 [node name="MatDat6" type="CSGBox3D" parent="NhaBaEn" unique_id=1099680685]
-transform = Transform3D(0.41441122, 0.9094881, -0.033078276, -0.9002027, 0.41498122, 0.1320068, 0.13378549, -0.024927946, 0.9906967, 14.740423, -2.8671856, -13.824121)
+transform = Transform3D(0.4154183, 0.90916556, -0.029068345, -0.9094919, 0.41570103, 0.0041875374, 0.015890824, 0.024697844, 0.99956864, 14.909902, -3.6174564, -13.657967)
 use_collision = true
-size = Vector3(3.3245897, 0.2, 6.58568)
+size = Vector3(1.0711938, 0.2, 6.58568)
+material = SubResource("StandardMaterial3D_m3hby")
+
+[node name="MatDat12" type="CSGBox3D" parent="NhaBaEn" unique_id=848607780]
+transform = Transform3D(0.34280083, 0.93506634, -0.090209804, -0.9113336, 0.35432026, 0.20959099, 0.22794467, 0.010363232, 0.97361887, 14.463431, -2.7353637, -13.8852215)
+use_collision = true
+size = Vector3(2.4388695, 0.2, 6.58568)
 material = SubResource("StandardMaterial3D_m3hby")
 
 [node name="MatDat7" type="CSGBox3D" parent="NhaBaEn" unique_id=934700399]
-transform = Transform3D(0.41441122, 0.9091402, -0.041553203, -0.9002026, 0.4161935, 0.12813346, 0.13378549, -0.015693644, 0.990886, 15.106856, -3.6549585, -20.745619)
+transform = Transform3D(0.36786482, 0.9285603, -0.049503967, -0.9227127, 0.37110883, 0.10430417, 0.11522406, 0.0073081222, 0.99331254, 14.875425, -3.5452874, -19.440022)
 use_collision = true
-size = Vector3(1.6944287, 0.2, 8.314071)
+size = Vector3(2.076602, 0.2, 5.6781273)
+material = SubResource("StandardMaterial3D_m3hby")
+
+[node name="MatDat13" type="CSGBox3D" parent="NhaBaEn" unique_id=1234185797]
+transform = Transform3D(0.36786488, 0.92986095, -0.0057889856, -0.92271274, 0.3657941, 0.121638075, 0.115224056, -0.039404783, 0.99255747, 15.052481, -3.8523355, -23.689516)
+use_collision = true
+size = Vector3(0.7856983, 0.2, 3.209888)
 material = SubResource("StandardMaterial3D_m3hby")
 
 [node name="MatDat3" type="CSGBox3D" parent="NhaBaEn" unique_id=1151936920]
-transform = Transform3D(0.17364821, 0.98480767, 0, -0.98480767, 0.17364821, 0, 0, 0, 1, 15.908478, -7.384398, -2.4929981)
+transform = Transform3D(0.19737063, 0.12951683, 0.9717356, -0.98032814, 0.027203787, 0.19549008, -0.0011156285, -0.9912038, 0.13233824, 13.146057, -7.906132, -26.404747)
+use_collision = true
+size = Vector3(5.801426, 0.2, 5.3582954)
+material = SubResource("StandardMaterial3D_m3hby")
+
+[node name="MatDat10" type="CSGBox3D" parent="NhaBaEn" unique_id=501582834]
+transform = Transform3D(0.0031393166, 0.083492465, 0.9965034, -0.96588266, 0.25831062, -0.018599821, -0.2589604, -0.96244705, 0.08145485, 12.482072, -4.63354, -26.310263)
+use_collision = true
+size = Vector3(2.2948804, 0.2, 4.886179)
+material = SubResource("StandardMaterial3D_m3hby")
+
+[node name="MatDat11" type="CSGBox3D" parent="NhaBaEn" unique_id=1126632270]
+transform = Transform3D(-0.0018863641, -0.009869337, 0.9999494, -0.97966623, 0.20063336, 0.0001321159, -0.20062456, -0.9796164, -0.010047153, -4.175763, -5.6645565, -26.894213)
+use_collision = true
+size = Vector3(11.364365, 0.2, 28.456068)
+material = SubResource("StandardMaterial3D_m3hby")
+
+[node name="MatDat9" type="CSGBox3D" parent="NhaBaEn" unique_id=865553545]
+transform = Transform3D(0.2055552, 0.97864544, 0, -0.97864544, 0.2055552, 0, 0, 0, 1, 15.831031, -7.400665, -2.4929981)
 use_collision = true
 size = Vector3(6.9632034, 0.2, 47.26375)
+material = SubResource("StandardMaterial3D_m3hby")
+
+[node name="MatDat8" type="CSGBox3D" parent="NhaBaEn" unique_id=567761303]
+transform = Transform3D(0.22813828, 0.19886547, -0.953103, -0.6101359, 0.7920635, 0.019220054, 0.7587403, 0.5771377, 0.302035, 31.801233, -10.938672, -38.06146)
+use_collision = true
+size = Vector3(3.6601605, 0.2, 54.503967)
 material = SubResource("StandardMaterial3D_m3hby")
 
 [node name="MatDat4" type="CSGBox3D" parent="NhaBaEn" unique_id=477295699]
@@ -82,18 +139,26 @@ light_energy = 1.2
 shadow_enabled = true
 
 [node name="MatDuong" type="CSGBox3D" parent="." unique_id=1915929259]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.308508, 16.138954, 34.21789)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.803543, 16.208328, 25.354286)
 use_collision = true
-size = Vector3(49.36751, 1.2898874, 26.730099)
+size = Vector3(70.35758, 1.4286351, 9.002893)
 
 [node name="Suoi2" parent="." unique_id=76088902 instance=ExtResource("2_wnfts")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.494687, 0, 0)
-
-[node name="Suoi3" parent="." unique_id=899783133 instance=ExtResource("2_wnfts")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.494687, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0430555, 0.17398834, -0.14106369)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2098045359]
 environment = SubResource("Environment_wnfts")
 
 [node name="TiemCoHan" parent="." unique_id=1954298854 instance=ExtResource("4_bnv53")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.341028, 0, 2.2686253)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.170618, 0, -15.813061)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1278998527]
+transform = Transform3D(142.00916, 0.26448944, 0.40828595, -1.1920929e-07, 36.627796, -0.58988106, -10.064762, 3.731824, 5.7607374, -66.759476, 14.665504, -75.66979)
+mesh = SubResource("QuadMesh_bnv53")
+surface_material_override/0 = SubResource("StandardMaterial3D_h0g2v")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=416414252]
+transform = Transform3D(74.56816, -2.2673287, -3.1572146, 3.1644287, 36.821342, -0.33695054, 48.661674, 1.0799465, 4.85996, 76.00357, 15.912779, -34.901356)
+mesh = SubResource("QuadMesh_bdtm4")
+surface_material_override/0 = SubResource("StandardMaterial3D_ii16j")
+metadata/_edit_group_ = true

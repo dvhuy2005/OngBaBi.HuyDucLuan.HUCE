@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfm4r3hor6js3"
-path.bptc="res://.godot/imported/hilly_terrain_01_puresky_2k.hdr-99e20810bae295ac7cd5484d1ed015fb.bptc.ctex"
+uid="uid://cpdkl78fhlv27"
+path.s3tc="res://.godot/imported/nui_rung_xa_tach_nen.png-444393d06f207f4b14929d93fa4df064.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Picture/hilly_terrain_01_puresky_2k.hdr"
-dest_files=["res://.godot/imported/hilly_terrain_01_puresky_2k.hdr-99e20810bae295ac7cd5484d1ed015fb.bptc.ctex"]
+source_file="res://Picture/AnhNen/nui_rung_xa_tach_nen.png"
+dest_files=["res://.godot/imported/nui_rung_xa_tach_nen.png-444393d06f207f4b14929d93fa4df064.s3tc.ctex"]
 
 [params]
 

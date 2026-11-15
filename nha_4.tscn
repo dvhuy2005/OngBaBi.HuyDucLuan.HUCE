@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c6bymwcm7fwu5"]
+
+[node name="Nha4" type="CSGBox3D" unique_id=1187745168]
+size = Vector3(12.514315, 7.4156494, 29.024132)
+
+[node name="Nha1" type="CSGBox3D" parent="." unique_id=1517470853]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023376465, 6.995619, -7.3556404)
+size = Vector3(12.5372505, 6.7939987, 21.80974)

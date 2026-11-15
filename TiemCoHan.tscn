@@ -29,37 +29,37 @@ size = Vector3(4, 0.2, 5.1842613)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03243828, 1.590908, 11.123497)
 size = Vector3(7.021806, 4.927582, 17.926092)
 
-[node name="TiemCoHan" type="CSGBox3D" parent="." unique_id=1191541343]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.985908, 20.845472, 56.879242)
-use_collision = true
-size = Vector3(18.103418, 0.09654236, 18.68214)
-
-[node name="Nha3" type="CSGBox3D" parent="TiemCoHan" unique_id=620274528]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 8.958771, -2.0152988, 0.025016785)
-use_collision = true
-size = Vector3(4, 0.2, 18.682)
-
-[node name="Nha4" type="CSGBox3D" parent="TiemCoHan" unique_id=666036832]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -8.946017, -2.0152988, 0.025016785)
-use_collision = true
-size = Vector3(4, 0.2, 18.682)
-
-[node name="Nha1" type="CSGBox3D" parent="TiemCoHan" unique_id=1704394348]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014819145, 0.0047073364, 7.1147537)
-size = Vector3(18.07378, 8.183647, 13.3301115)
-
-[node name="Nha2" type="CSGBox3D" parent="TiemCoHan" unique_id=1185663985]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014819145, -4.038845, 0)
-use_collision = true
-size = Vector3(18.07378, 0.09654236, 18.68214)
-
 [node name="MatDat1" type="CSGBox3D" parent="." unique_id=911329377]
-transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 0.99999994, -21.42008, 16.673782, 71.018936)
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 0.99999994, -23.127525, 16.67378, 67.3999)
 use_collision = true
-size = Vector3(39.47475, 0.2, 52.968582)
+size = Vector3(36.05986, 0.2, 45.730507)
 material = SubResource("StandardMaterial3D_0hmli")
 
-[node name="Tuong5" type="CSGBox3D" parent="MatDat1" unique_id=1027517108]
-transform = Transform3D(0.9986695, 0, -0.051569052, 0, 1, 0, 0.05156909, 0, 0.9986701, 18.455463, 0.66350937, -24.854038)
+[node name="Nha2" type="CSGBox3D" parent="." unique_id=1185663985]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.278205, 16.806627, 55.756382)
 use_collision = true
-size = Vector3(0.1, 1.2, 2.7716687)
+size = Vector3(15.518824, 0.09654236, 20.92786)
+
+[node name="Nha3" type="CSGBox3D" parent="Nha2" unique_id=620274528]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 7.6122923, 2.0235462, 1.1478767)
+use_collision = true
+size = Vector3(4, 0.2, 18.682)
+
+[node name="Nha4" type="CSGBox3D" parent="Nha2" unique_id=666036832]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -7.65372, 2.0235462, 1.1478767)
+use_collision = true
+size = Vector3(4, 0.2, 18.682)
+
+[node name="Nha1" type="CSGBox3D" parent="Nha2" unique_id=1704394348]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19018555, 4.0435524, 8.237614)
+size = Vector3(15.899195, 8.183647, 13.3301115)
+
+[node name="Tuong5" type="CSGBox3D" parent="Nha2" unique_id=1027517108]
+transform = Transform3D(0.9986695, 0, -0.051569052, 0, 1.0000001, 0, 0.05156909, 0, 0.9986701, 7.676369, 0.53066444, -9.277565)
+use_collision = true
+size = Vector3(0.1, 1.2, 2.3714104)
+
+[node name="TiemCoHan" type="CSGBox3D" parent="Nha2" unique_id=1191541343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02793026, 4.038845, 1.12286)
+use_collision = true
+size = Vector3(15.462964, 0.09654236, 18.68214)
